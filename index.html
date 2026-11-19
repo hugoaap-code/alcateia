@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Alcateia · Marketing Político · Marketing para políticos que resolvem</title>
+<meta name="description" content="Agência de marketing para políticos em Rio Preto e região. Você resolve o problema do bairro. A Alcateia faz o eleitor ver.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Alcateia · Marketing Político">
+<meta property="og:title" content="Alcateia · Marketing para políticos que resolvem">
+<meta property="og:description" content="Você resolve o problema do bairro. A Alcateia faz o eleitor ver. Rio Preto e região.">
+<link rel="canonical" href="https://hugoaap-code.github.io/alcateia/">
+<meta property="og:url" content="https://hugoaap-code.github.io/alcateia/">
+<meta property="og:image" content="https://hugoaap-code.github.io/alcateia/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Alcateia · Marketing Político: marketing para políticos que resolvem.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1B2D'/%3E%3Cpath fill='%23D5DEE9' d='M13 5 25 17h14L51 5l3 17 8 11-7 3 3 6-14 7-12 12-12-12-14-7 3-6-7-3 8-11z'/%3E%3Cpath fill='%23FF7A1A' d='m15 10 8 8-6 5zm34 0-8 8 6 5z'/%3E%3Cpath fill='%230F1B2D' d='m19 31 9 3-6 2.5zm26 0-9 3 6 2.5zM28 51h8l-4 5z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  WhatsApp: todos os links [data-wa] são reescritos pela constante WA_NUMBER no <script> no fim da página.
+  Os href no HTML são só fallback (sem JS).
+-->
+<style>
+:root{
+  --night:#0F1B2D; --night-2:#17283F; --night-3:#22385A;
+  --orange:#FF7A1A; --orange-2:#FFA65E; --orange-soft:#FFE7D4;
+  --green:#2BB673; --green-d:#16794A; --green-soft:#DDF4E8;
+  --paper:#F6F4EF; --paper-2:#EDE9DF; --white:#fff;
+  --ink:#0F1B2D; --muted:#4F5B6C; --line:#DED8CB;
+  --r:18px; --r-lg:28px;
+  --shadow:0 1px 2px rgba(15,27,45,.06),0 8px 24px rgba(15,27,45,.08);
+  --font:"Plus Jakarta Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --header-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+section{scroll-margin-top:calc(var(--header-h) + 8px)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;cursor:pointer;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--orange);color:var(--night);box-shadow:0 6px 0 -1px #C4560B}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 -1px #C4560B}
+.btn-primary:active{transform:translateY(2px);box-shadow:0 2px 0 -1px #C4560B}
+.btn-ghost{border-color:rgba(246,244,239,.35);color:var(--paper)}
+.btn-ghost:hover{border-color:var(--paper);background:rgba(246,244,239,.06)}
+.btn-dark{background:var(--night);color:var(--paper)}
+.btn-dark:hover{background:var(--night-3)}
+.btn-line{border-color:var(--night);color:var(--night);background:transparent}
+.btn-line:hover{background:var(--night);color:var(--paper)}
+.btn-block{width:100%}
+
+/* ---------- header ---------- */
+.header{position:sticky;top:0;z-index:50;background:rgba(15,27,45,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.07)}
+.header .wrap{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--paper)}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name b{font-size:19px;font-weight:800;letter-spacing:-.02em}
+.brand-name small{font-size:9.5px;font-weight:800;letter-spacing:.16em;color:var(--orange);margin-top:4px;white-space:nowrap}
+.nav{display:none;gap:26px}
+.nav a{color:rgba(246,244,239,.78);text-decoration:none;font-weight:600;font-size:15px}
+.nav a:hover{color:var(--paper)}
+.header .btn{min-height:40px;padding:0 16px;font-size:14px;box-shadow:none}
+.header .btn:hover{box-shadow:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--night);color:var(--paper);overflow:hidden;padding:36px 0 60px}
+.hero-map{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 15% 30%,rgba(15,27,45,.95),rgba(15,27,45,.55) 60%,rgba(15,27,45,.2));pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:44px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.eyebrow::before{content:"";display:inline-block;vertical-align:middle;margin:-2px 10px 0 4px;width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px rgba(255,122,26,.18)}
+.hero h1{margin-top:16px;font-size:clamp(38px,10.5vw,68px);font-weight:800;max-width:13ch}
+.hero h1 em{font-style:normal;color:var(--orange);white-space:nowrap}
+.hero .lead{margin-top:18px;font-size:19px;color:rgba(246,244,239,.85);max-width:34ch}
+.hero .lead b{color:var(--paper);white-space:nowrap}
+.hero-ctas{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-ctas .btn{flex:1 1 auto}
+.hero-tag{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:rgba(246,244,239,.7)}
+.hero-tag span{display:inline-flex;align-items:center;gap:6px}
+.hero-tag svg{width:16px;height:16px;color:var(--green)}
+
+/* phone mock: Reels antes/depois */
+.demo{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.stage{position:relative;width:100%;max-width:380px;display:flex;justify-content:center;padding-bottom:50px}
+.phone{width:100%;max-width:282px;border-radius:40px;padding:9px;background:#060D17;box-shadow:0 0 0 1.5px #2B3D58,0 30px 60px -20px rgba(0,0,0,.7),0 0 80px -10px rgba(255,122,26,.25)}
+.screen{border-radius:32px;overflow:hidden;background:#000;color:#fff;position:relative}
+.reel-top{display:flex;justify-content:space-between;align-items:center;padding:13px 16px 9px;font-weight:800;font-size:16px}
+.reel-top svg{width:20px;height:20px}
+.ba-v{position:relative}
+.ba-v figure{margin:0;position:relative}
+.ba-v figure+figure{border-top:3px solid #000}
+.ba-v svg{width:100%;height:auto}
+.lbl{position:absolute;left:10px;top:10px;font-size:12px;font-weight:800;letter-spacing:.1em;padding:4px 10px;border-radius:7px;color:#fff;background:#C4560B}
+.lbl.ok{background:var(--green-d)}
+.reel-acts{position:absolute;right:9px;bottom:14px;display:flex;flex-direction:column;gap:14px;z-index:2}
+.reel-acts svg{width:24px;height:24px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.6))}
+.reel-acts .liked{color:#FF3B5C}
+.reel-cap{padding:11px 14px 16px;font-size:13px;line-height:1.4;background:#000}
+.acct{display:flex;align-items:center;gap:8px;margin-bottom:7px;font-weight:700;font-size:13px}
+.acct .av{width:28px;height:28px;border-radius:50%;padding:2px;background:linear-gradient(45deg,#FFB13D,#FF3B5C,#B14BFF);flex:none}
+.acct .av i{display:block;width:100%;height:100%;border-radius:50%;background:#22385A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='9' r='4' fill='%23AEBDD0'/%3E%3Cpath d='M4 22c0-4.4 3.6-7 8-7s8 2.6 8 7' fill='%23AEBDD0'/%3E%3C/svg%3E") center/cover;border:2px solid #000}
+.acct .follow{border:1px solid rgba(255,255,255,.5);border-radius:7px;padding:1px 8px;font-size:12px}
+.reel-cap .music{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.7)}
+.wa-pop{position:absolute;left:0;bottom:0;z-index:3;width:206px;background:#fff;color:#111B21;border-radius:16px;padding:9px 11px 7px;box-shadow:0 18px 40px -10px rgba(0,0,0,.55);transform:rotate(-3deg)}
+.wa-pop .who{display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:var(--green-d);margin-bottom:3px}
+.wa-pop .who svg{width:16px;height:16px;color:#25D366}
+.wa-pop p{font-size:14px;line-height:1.35;font-weight:600}
+.wa-pop time{display:block;text-align:right;font-size:10.5px;color:#667781;margin-top:2px}
+.wa-pop time b{color:#53BDEB;font-weight:700}
+.demo-cap{font-size:12.5px;color:rgba(246,244,239,.6);letter-spacing:.02em}
+@media (prefers-reduced-motion:no-preference){
+  .wa-pop{opacity:0;animation:pop .5s ease 1s forwards}
+  .ba-v figure+figure{animation:wipe 1s ease .4s both}
+  @keyframes pop{from{opacity:0;transform:translateY(12px) rotate(-3deg)}to{opacity:1;transform:rotate(-3deg)}}
+  @keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+}
+
+/* ---------- sections ---------- */
+.sec{padding:64px 0}
+.sec-alt{background:var(--paper-2)}
+.sec-head{max-width:760px;margin-bottom:32px}
+.sec-head .eyebrow{color:#C4560B}
+.sec-head .eyebrow::before{box-shadow:0 0 0 4px rgba(255,122,26,.16)}
+.sec-head h2{margin-top:10px;font-size:clamp(28px,6.4vw,44px);font-weight:800}
+.sec-head p{margin-top:12px;font-size:17px;color:var(--muted)}
+.on-dark .sec-head p{color:rgba(246,244,239,.75)}
+.on-dark .sec-head .eyebrow{color:var(--orange)}
+
+/* problema */
+.pains{display:grid;gap:12px;grid-template-columns:1fr}
+.pain-card{display:flex;gap:14px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.ico{flex:none;width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:var(--night);color:var(--orange)}
+.ico svg{width:28px;height:28px}
+.pain-card h3{font-size:17px;font-weight:800;line-height:1.25}
+.stat{margin-top:16px;background:var(--night);color:var(--paper);border-radius:var(--r-lg);padding:24px 22px;display:grid;gap:10px;position:relative;overflow:hidden}
+.stat b{font-size:clamp(48px,13vw,76px);font-weight:800;line-height:1;letter-spacing:-.03em;color:var(--orange)}
+.stat p{font-size:18px;font-weight:600;line-height:1.45;max-width:46ch}
+.stat small{font-size:12.5px;color:rgba(246,244,239,.55)}
+.stat svg.w{position:absolute;right:-30px;bottom:-40px;width:180px;opacity:.08;transform:rotate(-12deg)}
+
+/* serviços */
+.svcs{display:grid;gap:12px;grid-template-columns:1fr}
+.svc{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px;position:relative}
+.svc .n{position:absolute;right:18px;top:16px;font-size:13px;font-weight:800;color:#BDB4A2}
+.svc h3{font-size:19px;font-weight:800}
+.svc p{font-size:15.5px;color:var(--muted);line-height:1.45}
+.tag{align-self:flex-start;font-size:12px;font-weight:700;color:var(--green-d);background:var(--green-soft);border-radius:999px;padding:3px 10px}
+.svc.main{background:var(--night);color:var(--paper);border-color:var(--night)}
+.svc.main p{color:rgba(246,244,239,.75)}
+.svc.main .ico{background:var(--orange);color:var(--night)}
+.svc.main .tag{background:rgba(43,182,115,.16);color:#6FE0A6}
+.svc.main .n{color:rgba(246,244,239,.3)}
+
+/* como funciona */
+.how-grid{display:grid;gap:36px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.step{position:relative;display:grid;grid-template-columns:52px 1fr;gap:14px;padding-bottom:26px}
+.step:last-child{padding-bottom:0}
+.step::before{counter-increment:s;content:counter(s);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:20px;background:var(--orange);color:var(--night);position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;left:25px;top:56px;bottom:4px;border-left:2px dashed #BDB4A2}
+.step:last-child::before{background:var(--green)}
+.step h3{font-size:19px;font-weight:800;padding-top:4px}
+.step p{color:var(--muted);margin-top:3px;font-size:15.5px}
+.report{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px;box-shadow:var(--shadow);max-width:460px;width:100%;justify-self:center}
+.report-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.report-top b{font-size:15px}
+.report-top small{display:block;color:var(--muted);font-size:12.5px;font-weight:500}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ba figure{margin:0}
+.ba svg{width:100%;height:auto;border-radius:12px}
+.ba figcaption{font-size:12.5px;font-weight:700;margin-top:6px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.report-rows{margin-top:14px;border-top:1px solid var(--line);padding-top:10px;display:grid;gap:8px;font-size:14px}
+.report-rows div{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.chip-open{background:var(--orange-soft);color:#A9480A}
+.chip-done{background:var(--green-soft);color:var(--green-d)}
+.illus{margin-top:12px;font-size:12px;color:var(--muted);text-align:center}
+
+/* para quem */
+.who{display:grid;gap:12px;grid-template-columns:1fr}
+.who-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:10px}
+.who-card .ico{background:var(--orange-soft);color:#B94F09}
+.who-card h3{font-size:18px;font-weight:800}
+.who-card p{font-size:15px;color:var(--muted);line-height:1.45}
+.who-card.alt{background:var(--night);color:var(--paper);border-color:var(--night)}
+.who-card.alt p{color:rgba(246,244,239,.72)}
+.who-card.alt .ico{background:var(--night-3);color:var(--orange)}
+.who-card.alt .tag{background:rgba(43,182,115,.16);color:#6FE0A6}
+
+/* planos */
+.plans-sec{background:var(--night);color:var(--paper);position:relative;overflow:hidden}
+.launch{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--night);background:var(--green);padding:6px 12px;border-radius:8px;transform:rotate(-1.5deg)}
+.plans{display:grid;gap:14px;grid-template-columns:1fr}
+.plan{background:var(--night-2);border:1px solid rgba(246,244,239,.1);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:12px;position:relative}
+.plan.feat{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.plan .badge{position:absolute;top:-12px;right:18px;background:var(--orange);color:var(--night);font-size:12px;font-weight:800;padding:5px 11px;border-radius:999px}
+.plan .for{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.plan.feat .for{color:#B94F09}
+.plan h3{font-size:22px;font-weight:800}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.price small{width:100%;font-size:13px;font-weight:600;opacity:.7}
+.price b{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.price span{font-size:15px;opacity:.8}
+.price-note{font-size:14px;opacity:.75;margin-top:-6px}
+.plan ul{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:7px;font-size:15px}
+.plan li{display:grid;grid-template-columns:18px 1fr;gap:8px;line-height:1.4}
+.plan li svg{width:18px;height:18px;color:var(--green);margin-top:2px}
+.plan .btn{margin-top:auto}
+.plan:not(.feat) .btn-line{border-color:rgba(246,244,239,.4);color:var(--paper)}
+.plan:not(.feat) .btn-line:hover{background:var(--paper);color:var(--night)}
+.soon{font-size:11px;font-weight:800;color:var(--night);background:var(--orange-2);border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle;letter-spacing:.04em}
+.plans-foot{margin-top:22px;font-size:14px;color:rgba(246,244,239,.7);max-width:720px}
+
+/* dentro da lei */
+.law{padding:56px 0}
+.law-box{display:grid;gap:22px}
+.law-box h2{font-size:clamp(26px,5.6vw,36px);font-weight:800;display:flex;align-items:center;gap:14px}
+.law-box h2 .ico{background:var(--green-soft);color:var(--green-d)}
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.ticks li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;font-size:16px;font-weight:600;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.ticks li svg{width:30px;height:30px;padding:6px;border-radius:9px;background:var(--green-soft);color:var(--green-d)}
+
+/* faq */
+.faq{display:grid;gap:10px}
+.faq details{background:var(--white);border:1px solid var(--line);border-radius:var(--r)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 20px;font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:20px;top:50%;width:22px;height:22px;margin-top:-11px;border-radius:50%;background:var(--orange-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B94F09' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M12 7v10M7 12h10'/%3E%3C/svg%3E") center/14px no-repeat;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 20px 18px;color:var(--muted);font-size:16px}
+
+/* final cta */
+.final{background:var(--orange);color:var(--night);position:relative;overflow:hidden}
+.final .wrap{position:relative;z-index:1;display:grid;gap:22px;justify-items:start}
+.final h2{font-size:clamp(30px,7vw,52px);font-weight:800;max-width:16ch}
+.final p{font-size:18px;max-width:40ch;font-weight:500;margin-top:12px}
+.final-wolf{position:absolute;right:-60px;bottom:-70px;width:300px;opacity:.14;transform:rotate(-12deg)}
+
+/* footer */
+.footer{background:var(--night);color:rgba(246,244,239,.72);padding:40px 0 28px;font-size:14px}
+.footer .wrap{display:grid;gap:18px}
+.footer .brand{color:var(--paper)}
+.foot-row{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;border-top:1px solid rgba(246,244,239,.1);padding-top:18px}
+.footer .tec b{color:var(--paper)}
+
+/* mobile WhatsApp bar */
+.wa-fab{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:flex;box-shadow:0 10px 30px rgba(15,27,45,.35);border-radius:999px}
+.wa-fab .btn{width:100%;box-shadow:0 5px 0 -1px #C4560B}
+.footer{padding-bottom:108px}
+
+/* ---------- breakpoints ---------- */
+@media (max-width:559px){
+  .svc,.who-card{display:grid;grid-template-columns:52px 1fr;column-gap:14px;row-gap:4px;align-items:start}
+  .svc>*,.who-card>*{grid-column:2}
+  .svc .ico,.who-card .ico{grid-column:1;grid-row:1/span 3}
+  .svc .n{display:none}
+  .svc h3,.who-card h3{padding-top:2px}
+  .svc .tag,.who-card .tag{margin-top:4px}
+}
+@media (min-width:560px){
+  .pains{grid-template-columns:1fr 1fr}
+  .svcs{grid-template-columns:1fr 1fr}
+  .who{grid-template-columns:1fr 1fr}
+  .plans{grid-template-columns:1fr 1fr}
+  .plans .plan:last-child{grid-column:1/-1}
+  .ticks{grid-template-columns:1fr 1fr}
+  .hero-ctas .btn{flex:0 0 auto}
+  .stat{grid-template-columns:auto 1fr;align-items:center;gap:8px 28px}
+  .stat small{grid-column:1/-1}
+}
+@media (min-width:880px){
+  :root{--header-h:72px}
+  .wrap{padding:0 32px}
+  .nav{display:flex}
+  .header .btn{min-height:44px;font-size:15px}
+  .brand-name small{font-size:10px}
+  .hero{padding:72px 0 88px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;gap:56px}
+  .hero .lead{font-size:21px}
+  .phone{max-width:300px}
+  .wa-pop{left:-34px;bottom:0;width:220px}
+  .sec{padding:96px 0}
+  .pains{grid-template-columns:repeat(5,1fr);gap:14px}
+  .pain-card{flex-direction:column;align-items:flex-start;padding:20px}
+  .stat{padding:30px 36px}
+  .svcs{grid-template-columns:repeat(3,1fr);gap:16px}
+  .how-grid{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .who{grid-template-columns:repeat(6,1fr);gap:16px}
+  .who-card{grid-column:span 2}
+  .who-card:nth-child(4),.who-card:nth-child(5){grid-column:span 3}
+  .plans{grid-template-columns:repeat(6,1fr);gap:18px}
+  .plans .plan{grid-column:span 2}
+  .plans .plan:nth-child(4),.plans .plan:last-child{grid-column:span 3}
+  .law{padding:72px 0}
+  .law-box{grid-template-columns:auto 1fr;align-items:center;gap:48px}
+  .law-box h2{white-space:nowrap}
+  .faq-sec .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+  .final .wrap{grid-template-columns:1fr auto;align-items:center}
+  .final-wolf{width:420px;right:-40px;bottom:-120px}
+  .wa-fab{display:none}
+  .footer{padding-bottom:28px}
+  .final h2{max-width:22ch}
+}
+@media (max-width:379px){
+  .brand-name small{letter-spacing:.1em}
+  .header .btn span{display:none}
+  .wa-pop{width:184px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== SVG sprite (logo + ícones) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="wolf" viewBox="0 0 64 64">
+      <path fill="#D5DEE9" d="M13 5 25 17h14L51 5l3 17 8 11-7 3 3 6-14 7-12 12-12-12-14-7 3-6-7-3 8-11z"/>
+      <path fill="#AEBDD0" d="M25 17h14l-7 12zM10 22 2 33l7 3 10-5zm44 0 8 11-7 3-10-5z"/>
+      <path fill="#F6F4EF" d="m32 29 9 10-9 22-9-22z"/>
+      <path fill="#FF7A1A" d="m15 10 8 8-6 5zm34 0-8 8 6 5z"/>
+      <path fill="#0F1B2D" d="m19 31 9 3-6 2.5zm26 0-9 3 6 2.5zM28 51h8l-4 5z"/>
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2a9.8 9.8 0 0 0-8.4 14.9L2.3 21.7l4.7-1.2A9.8 9.8 0 1 0 12 2.2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.5-.3Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <!-- reels UI -->
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-8-4.9-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.1-8 11-8 11Z"/></symbol>
+    <symbol id="i-comment" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M20.5 12a8.5 8.5 0 0 1-12.4 7.5L3.5 20.5l1.1-4.3A8.5 8.5 0 1 1 20.5 12Z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 3 3 10.5l7 2.5 2.5 7zM10 13l11-10"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.5"/></g></symbol>
+    <!-- problema -->
+    <symbol id="i-doc" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h11l6 6v20H8z"/><path d="M19 3v6h6M12 16h9M12 21h9M12 26h5"/></g></symbol>
+    <symbol id="i-buraco" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3 4 29M21 3l7 26M16 4v3M16 11v3"/><path d="M10.5 22.5c0-2 2.5-3.5 5.5-3.5s5.5 1.5 5.5 3.5-2.5 3.5-5.5 3.5-5.5-1.5-5.5-3.5Z"/><path d="M13 22.5c1-.8 2-1.2 3-1.2s2.2.4 3 1.2"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="14" height="26" rx="3"/><path d="M14 25h4M13 11h6l-6 6h6"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h17v12H10l-5 4v-4H3z"/><path d="M24 11h5v11h-2v4l-4-4h-8v-2"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="24" height="22" rx="3"/><path d="M4 13h24M10 3v6M22 3v6M11 20h10"/></g></symbol>
+    <!-- serviços -->
+    <symbol id="i-gab" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h24v17H13l-6 5v-5H4z"/><path d="m11 13 3.5 3.5L21 10"/></g></symbol>
+    <symbol id="i-ba" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="26" height="20" rx="3"/><path d="M16 3v26M6 22l4-5 3 3M19 21l3-3 4 4"/></g></symbol>
+    <symbol id="i-video" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="16" rx="3"/><path d="m21 14 8-5v14l-8-5"/></g></symbol>
+    <symbol id="i-alvo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="17" r="12"/><circle cx="15" cy="17" r="6.5"/><path d="m15 17 12-12M22 5h5v5"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 29s-9-8.5-9-15a9 9 0 0 1 18 0c0 6.5-9 15-9 15Z"/><circle cx="16" cy="14" r="3.5"/></g></symbol>
+    <symbol id="i-curso" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 12 14-7 14 7-14 7z"/><path d="M8 15v7c4.5 3 11.5 3 16 0v-7M30 12v8"/></g></symbol>
+    <!-- públicos -->
+    <symbol id="i-mic" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="3" width="8" height="15" rx="4"/><path d="M7 14a9 9 0 0 0 18 0M16 23v6M11 29h10"/></g></symbol>
+    <symbol id="i-pref" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 16 5l13 7z"/><path d="M6 12v13M12 12v13M20 12v13M26 12v13M3 28h26"/></g></symbol>
+    <symbol id="i-city" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 28V14l7-5 7 5v14"/><path d="M17 28V8h12v20M8 28v-6h4v6M2 28h28M21 13h4M21 18h4M21 23h4"/></g></symbol>
+    <symbol id="i-dome" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 13a7 7 0 0 1 14 0M16 3v3M4 13h24M7 13v13M12 13v13M20 13v13M25 13v13M3 28h26"/></g></symbol>
+    <symbol id="i-flag" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 29V4M7 5h18l-3.5 5 3.5 5H7"/></g></symbol>
+    <symbol id="i-grupo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="12" r="3.2"/><path d="M3 27c0-4.4 3.6-7 8-7s8 2.6 8 7"/><path d="M19 20.5c1-.3 1.9-.5 3-.5 3.9 0 7 2.2 7 6"/></g></symbol>
+    <symbol id="i-escudo" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 5 7v8c0 7 5 11.5 11 14 6-2.5 11-7 11-14V7z"/><path d="m11 16 3.5 3.5L21 13"/></g></symbol>
+    <!-- rua: antes / depois -->
+    <symbol id="rua-base" viewBox="0 0 280 170">
+      <rect width="280" height="104" fill="#BFE0F2"/>
+      <path d="M8 100V52l34-22 34 22v48z" fill="#F1E2CB"/><path d="M2 54 42 26l40 28" fill="none" stroke="#B5654A" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="32" y="66" width="18" height="34" fill="#9B7B5B"/><rect x="56" y="62" width="14" height="12" fill="#8EC9F0"/>
+      <path d="M196 100V48h76v52z" fill="#DCE6EE"/><path d="M190 50h88" stroke="#7F93A8" stroke-width="6"/>
+      <rect x="206" y="62" width="16" height="13" fill="#8EC9F0"/><rect x="244" y="62" width="16" height="13" fill="#8EC9F0"/><rect x="226" y="72" width="16" height="28" fill="#7F93A8"/>
+      <path d="M0 100h280v70H0z" fill="#C9BBA4"/>
+      <path d="M112 100h56l112 70H0z" fill="#6B7480"/>
+      <path d="M140 104v8M140 122v12M140 146v18" stroke="#F6F4EF" stroke-width="3"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Alcateia Marketing Político, início">
+      <svg aria-hidden="true"><use href="#wolf"/></svg>
+      <span class="brand-name"><b>Alcateia</b><small>MARKETING POLÍTICO</small></span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#o-que-faz">O que faz</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#para-quem">Para quem</a>
+      <a href="#planos">Planos</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary" data-wa="Olá! Vim pelo site da Alcateia e quero um diagnóstico do meu mandato." href="https://wa.me/5517991154582" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg><span>Falar agora</span>
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero">
+  <svg class="hero-map" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g stroke="#2A4061" stroke-width="2" fill="none">
+      <path d="M-20 120 L1220 60M-20 300 L1220 260M-20 480 L1220 470M-20 640 L1220 690"/>
+      <path d="M140 -20 L210 720M420 -20 L470 720M700 -20 L690 720M960 -20 L900 720M1120 -20 L1180 720"/>
+      <path d="M-20 560 C300 520 520 380 760 380 S1100 300 1220 180" stroke="#34507A" stroke-width="6"/>
+    </g>
+    <g>
+      <circle cx="700" cy="90" r="5" fill="#FF7A1A"/><circle cx="700" cy="90" r="16" fill="#FF7A1A" opacity=".18"/>
+      <circle cx="925" cy="470" r="5" fill="#2BB673"/><circle cx="925" cy="470" r="16" fill="#2BB673" opacity=".18"/>
+      <circle cx="1145" cy="66" r="5" fill="#2BB673"/><circle cx="1145" cy="66" r="16" fill="#2BB673" opacity=".18"/>
+      <circle cx="1170" cy="560" r="5" fill="#FF7A1A"/><circle cx="1170" cy="560" r="16" fill="#FF7A1A" opacity=".18"/>
+      <circle cx="1060" cy="282" r="5" fill="#2BB673"/>
+      <circle cx="1000" cy="660" r="5" fill="#FF7A1A"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Agência de marketing para políticos</span>
+      <h1>Marketing para políticos <em>que resolvem.</em></h1>
+      <p class="lead">Você resolve o problema do bairro. <b>A Alcateia faz o eleitor ver.</b></p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" data-wa="Olá! Vim pelo site da Alcateia e quero falar sobre o marketing do meu mandato." href="https://wa.me/5517991154582" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg>Quero falar com a Alcateia
+        </a>
+        <a class="btn btn-ghost" href="#planos">Ver planos <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="hero-tag">
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Vereadores, prefeitos e deputados</span>
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Dentro da lei eleitoral</span>
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Rio Preto e região</span>
+      </div>
+    </div>
+
+    <figure class="demo" aria-label="Demonstração ilustrativa: post de antes e depois de uma rua e mensagem de agradecimento de um morador">
+      <div class="stage">
+        <div class="phone">
+          <div class="screen">
+            <div class="reel-top"><span>Reels</span><svg aria-hidden="true"><use href="#i-cam"/></svg></div>
+            <div class="ba-v">
+              <figure>
+                <svg viewBox="0 0 280 170" role="img" aria-label="Antes: rua com mato alto na calçada">
+                  <use href="#rua-base"/>
+                  <ellipse cx="150" cy="140" rx="22" ry="7" fill="#3F454D"/>
+                  <g fill="#3E8E3A"><path d="M0 170 6 96 13 170zM12 170 22 84 28 170zM26 170 32 100 40 170zM38 170 48 88 54 170zM52 170 58 98 66 170zM64 170 74 104 78 150zM84 128 90 96 96 120zM98 112 104 92 108 106z"/><path d="M280 170 274 94 266 170zM268 170 258 82 252 170zM254 170 246 98 240 170zM240 170 232 86 226 170zM226 170 218 100 214 150zM206 140 200 98 194 126zM190 118 184 94 178 108z"/></g>
+                  <g fill="#5DB24D"><path d="M6 170 16 104 20 170zM30 170 40 96 44 170zM56 170 64 108 70 160zM274 170 264 104 260 170zM248 170 238 96 234 170zM224 164 214 108 208 160z"/></g>
+                  <path d="M60 158c6-4 10 3 16-1" fill="none" stroke="#5B4A2E" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <span class="lbl">ANTES</span>
+              </figure>
+              <figure>
+                <svg viewBox="0 0 280 170" role="img" aria-label="Depois: rua limpa, calçada roçada">
+                  <use href="#rua-base"/>
+                  <circle cx="160" cy="28" r="13" fill="#FFD36B"/>
+                  <path d="M0 150 112 100H96L0 142zM280 150 168 100h16l96 42z" fill="#7CC36B"/>
+                  <rect x="88" y="66" width="5" height="34" fill="#7A5B3A"/><circle cx="90.5" cy="60" r="15" fill="#3E8E3A"/><circle cx="84" cy="66" r="8" fill="#5DB24D"/>
+                </svg>
+                <span class="lbl ok">DEPOIS</span>
+              </figure>
+              <div class="reel-acts" aria-hidden="true">
+                <svg class="liked"><use href="#i-heart"/></svg>
+                <svg><use href="#i-comment"/></svg>
+                <svg><use href="#i-send"/></svg>
+              </div>
+            </div>
+            <div class="reel-cap">
+              <div class="acct"><span class="av"><i></i></span>seu.mandato<span class="follow">Seguir</span></div>
+              Pedido do morador da Rua das Flores: resolvido em 7 dias ✅
+              <span class="music">♫ Áudio original</span>
+            </div>
+          </div>
+        </div>
+        <div class="wa-pop">
+          <div class="who"><svg aria-hidden="true"><use href="#i-wa"/></svg>Morador · Rua das Flores</div>
+          <p>Vereador, obrigado! A rua ficou outra 🙏</p>
+          <time>18:42 <b>✓✓</b></time>
+        </div>
+      </div>
+      <figcaption class="demo-cap">Demonstração ilustrativa</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== 2. PROBLEMA ===== -->
+<section class="sec" id="problema">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">O problema</span>
+      <h2>O político trabalha e ninguém fica sabendo.</h2>
+    </div>
+    <div class="pains">
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-doc"/></svg></span><h3>Faz indicação e o eleitor nem sabe</h3></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-buraco"/></svg></span><h3>Resolve o buraco e o crédito some</h3></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><h3>Rede social parada ou sem resultado</h3></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Assessoria perdida no WhatsApp</h3></article>
+      <article class="pain-card"><span class="ico"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><h3>Chega a eleição e falta história para contar</h3></article>
+    </div>
+    <div class="stat">
+      <svg class="w" aria-hidden="true" viewBox="0 0 64 64"><use href="#wolf"/></svg>
+      <b>7,7 mil</b>
+      <p>Em Rio Preto, os vereadores fizeram cerca de 7,7 mil indicações à Prefeitura em 2026 — 7 em cada 10 sobre buraco, sinalização ou mato.</p>
+      <small>Fonte: site da Câmara Municipal, levantamento por amostra até 05/11/2026.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. O QUE A ALCATEIA FAZ ===== -->
+<section class="sec sec-alt" id="o-que-faz">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">O que a Alcateia faz</span>
+      <h2>Cada problema resolvido vira prova de trabalho.</h2>
+    </div>
+    <div class="svcs">
+      <article class="svc main"><span class="n">01</span><span class="ico"><svg aria-hidden="true"><use href="#i-gab"/></svg></span><h3>Gabinete que Resolve</h3><p>Eleitor manda foto e local no WhatsApp. A gente acompanha até resolver.</p><span class="tag">Assistente de IA KaBot</span></article>
+      <article class="svc"><span class="n">02</span><span class="ico"><svg aria-hidden="true"><use href="#i-ba"/></svg></span><h3>Antes e depois</h3><p>Cada entrega vira post, Reels e mensagem para o bairro.</p></article>
+      <article class="svc"><span class="n">03</span><span class="ico"><svg aria-hidden="true"><use href="#i-video"/></svg></span><h3>Redes sociais do mandato</h3><p>Roteiro, gravação, edição e publicação. Rede parada nunca mais.</p></article>
+      <article class="svc"><span class="n">04</span><span class="ico"><svg aria-hidden="true"><use href="#i-alvo"/></svg></span><h3>Tráfego pago por bairro</h3><p>Anúncios para quem mora onde você trabalhou.</p></article>
+      <article class="svc"><span class="n">05</span><span class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><h3>Presença no bairro</h3><p>Agenda de visitas, mutirões e reuniões com associações.</p></article>
+      <article class="svc"><span class="n">06</span><span class="ico"><svg aria-hidden="true"><use href="#i-curso"/></svg></span><h3>Mentoria e curso</h3><p>“Político que Resolve” para políticos e assessores.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. COMO FUNCIONA ===== -->
+<section class="sec" id="como-funciona">
+  <div class="wrap how-grid">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do pedido do eleitor ao post no bairro.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><div><h3>Diagnóstico do mandato</h3><p>Redes, bairros, pedidos e o que já foi entregue.</p></div></li>
+        <li class="step"><div><h3>Plano por bairro</h3><p>Onde agir, o que mostrar e para quem.</p></div></li>
+        <li class="step"><div><h3>Resolver e registrar</h3><p>Cada pedido acompanhado e fotografado até o fim.</p></div></li>
+        <li class="step"><div><h3>Mostrar e crescer</h3><p>Antes e depois nas redes, no WhatsApp e no anúncio.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="report" aria-label="Exemplo ilustrativo de painel do mandato">
+      <div class="report-top">
+        <div><b>Painel do mandato</b><small>Bairro exemplo · este mês</small></div>
+        <span class="chip chip-done">No ar</span>
+      </div>
+      <div class="ba">
+        <figure>
+          <svg viewBox="0 0 280 170" role="img" aria-label="Antes: rua com mato alto"><use href="#rua-base"/><g fill="#3E8E3A"><path d="M0 170 6 96 13 170zM12 170 22 84 28 170zM26 170 32 100 40 170zM38 170 48 88 54 170zM52 170 58 98 66 170zM280 170 274 94 266 170zM268 170 258 82 252 170zM254 170 246 98 240 170zM240 170 232 86 226 170z"/></g><ellipse cx="150" cy="140" rx="22" ry="7" fill="#3F454D"/></svg>
+          <figcaption>Antes</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 280 170" role="img" aria-label="Depois: rua limpa"><use href="#rua-base"/><circle cx="160" cy="28" r="13" fill="#FFD36B"/><path d="M0 150 112 100H96L0 142zM280 150 168 100h16l96 42z" fill="#7CC36B"/></svg>
+          <figcaption>Depois</figcaption>
+        </figure>
+      </div>
+      <div class="report-rows">
+        <div><span>Mato · Rua das Flores</span><span class="chip chip-done">Resolvido</span></div>
+        <div><span>Post + Reels do antes e depois</span><span class="chip chip-done">Publicado</span></div>
+        <div><span>Buraco · Avenida do bairro</span><span class="chip chip-open">Acompanhando</span></div>
+      </div>
+      <p class="illus">Exemplo ilustrativo</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. PARA QUEM ===== -->
+<section class="sec sec-alt" id="para-quem">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Para quem</span>
+      <h2>Para quem tem mandato ou quer ter.</h2>
+    </div>
+    <div class="who">
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-mic"/></svg></span><h3>Vereadores</h3><p>Indicação atendida vira prova de trabalho.</p></article>
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-city"/></svg></span><h3>Prefeitos e secretários</h3><p>Entrega feita, bairro informado.</p></article>
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-dome"/></svg></span><h3>Deputados</h3><p>Presença nos bairros da base o ano todo.</p></article>
+      <article class="who-card alt"><span class="ico"><svg aria-hidden="true"><use href="#i-flag"/></svg></span><h3>Pré-candidatos 2028</h3><p>Construa sua história de trabalho antes da campanha.</p><span class="tag">Rumo a 2028</span></article>
+      <article class="who-card"><span class="ico"><svg aria-hidden="true"><use href="#i-grupo"/></svg></span><h3>Assessores e chefes de gabinete</h3><p>Método, rotina e ferramenta para o gabinete.</p><span class="tag">Mentoria e curso</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. PLANOS ===== -->
+<section class="sec plans-sec on-dark" id="planos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Planos</span>
+      <h2>Escolha o tamanho do seu mandato.</h2>
+      <span class="launch">Valores de lançamento</span>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <span class="for">Para começar</span>
+        <h3>Gabinete que Resolve</h3>
+        <div class="price"><small>a partir de</small><b>R$ 1.500</b><span>/mês</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>WhatsApp do mandato com KaBot (IA)</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Pedidos organizados até resolver</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Relatório por bairro</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site da Alcateia e quero saber do plano Gabinete que Resolve." href="https://wa.me/5517991154582" target="_blank" rel="noopener">Quero o Gabinete</a>
+      </article>
+      <article class="plan feat">
+        <span class="badge">Recomendado</span>
+        <span class="for">Para aparecer</span>
+        <h3>Mandato em Destaque</h3>
+        <div class="price"><small>a partir de</small><b>R$ 2.900</b><span>/mês</span></div>
+        <p class="price-note">Verba de anúncio à parte.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tudo do Gabinete que Resolve</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Redes sociais do mandato</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>8 vídeos por mês</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tráfego pago gerenciado por bairro</li>
+        </ul>
+        <a class="btn btn-primary btn-block" data-wa="Olá! Vim pelo site da Alcateia e quero saber do plano Mandato em Destaque." href="https://wa.me/5517991154582" target="_blank" rel="noopener">Quero o Mandato em Destaque</a>
+      </article>
+      <article class="plan">
+        <span class="for">Para 2028</span>
+        <h3>Rumo a 2028</h3>
+        <div class="price"><small>a partir de</small><b>R$ 4.900</b><span>/mês</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tudo do Mandato em Destaque</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Estratégia de pré-campanha</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Pesquisa por bairro</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site da Alcateia e quero saber do plano Rumo a 2028." href="https://wa.me/5517991154582" target="_blank" rel="noopener">Quero o Rumo a 2028</a>
+      </article>
+      <article class="plan">
+        <span class="for">Políticos e assessores</span>
+        <h3>Mentoria Político que Resolve</h3>
+        <div class="price"><small>a partir de</small><b>R$ 2.500</b><span>8 semanas</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Método aplicado no seu mandato</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Para o político e a equipe</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site da Alcateia e quero saber da Mentoria Político que Resolve." href="https://wa.me/5517991154582" target="_blank" rel="noopener">Quero a mentoria</a>
+      </article>
+      <article class="plan">
+        <span class="for">Curso online</span>
+        <h3>Político que Resolve <span class="soon">EM BREVE</span></h3>
+        <p class="price-note" style="margin-top:0">Lista de espera aberta.</p>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>O método da Alcateia, no seu ritmo</li>
+        </ul>
+        <a class="btn btn-line btn-block" data-wa="Olá! Vim pelo site da Alcateia e quero entrar na lista de espera do curso Político que Resolve." href="https://wa.me/5517991154582" target="_blank" rel="noopener">Entrar na lista de espera</a>
+      </article>
+    </div>
+    <p class="plans-foot">Valores de lançamento, sujeitos a ajuste conforme o mandato.</p>
+  </div>
+</section>
+
+<!-- ===== 7. DENTRO DA LEI ===== -->
+<section class="law" id="dentro-da-lei" aria-labelledby="lei-t">
+  <div class="wrap law-box">
+    <h2 id="lei-t"><span class="ico"><svg aria-hidden="true"><use href="#i-escudo"/></svg></span>Dentro da lei.</h2>
+    <ul class="ticks">
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Comunicação de mandato com prestação de contas.</span></li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Sem pedido de voto fora do período eleitoral.</span></li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Gastos de campanha declarados.</span></li>
+      <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Nada de estrutura pública para promoção pessoal.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 8. FAQ ===== -->
+<section class="sec sec-alt faq-sec" id="duvidas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas rápidas.</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Atende qualquer partido?</summary>
+        <p>Sim. Trabalhamos com quem quer mostrar trabalho.</p>
+      </details>
+      <details>
+        <summary>Isso é permitido?</summary>
+        <p>Sim. Comunicação de mandato é permitida, e a gente segue a legislação eleitoral.</p>
+      </details>
+      <details>
+        <summary>Vocês garantem eleição?</summary>
+        <p>Não. A gente garante método, frequência e resultado visível.</p>
+      </details>
+      <details>
+        <summary>Atende fora de Rio Preto?</summary>
+        <p>Sim: Rio Preto e região.</p>
+      </details>
+      <details>
+        <summary>Como começa?</summary>
+        <p>Com um diagnóstico do mandato pelo WhatsApp.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. CTA FINAL ===== -->
+<section class="sec final">
+  <svg class="final-wolf" aria-hidden="true" viewBox="0 0 64 64"><use href="#wolf"/></svg>
+  <div class="wrap">
+    <div>
+      <h2>Você resolve. A gente mostra.</h2>
+      <p>Comece pelo diagnóstico do seu mandato.</p>
+    </div>
+    <a class="btn btn-dark" data-wa="Olá! Vim pelo site da Alcateia e quero um diagnóstico do meu mandato." href="https://wa.me/5517991154582" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-wa"/></svg>Quero falar com a Alcateia
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Alcateia Marketing Político, voltar ao topo">
+      <svg aria-hidden="true"><use href="#wolf"/></svg>
+      <span class="brand-name"><b>Alcateia</b><small>MARKETING POLÍTICO</small></span>
+    </a>
+    <p>Agência de marketing para políticos que resolvem.</p>
+    <div class="foot-row">
+      <span>Alcateia · Marketing Político · Rio Preto e região</span>
+      <span class="tec">Tecnologia <b>HKA TEC</b></span>
+      <span>© 2026 Alcateia</span>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-fab">
+  <a class="btn btn-primary" data-wa="Olá! Vim pelo site da Alcateia e quero um diagnóstico do meu mandato." href="https://wa.me/5517991154582" target="_blank" rel="noopener">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>Quero falar com a Alcateia
+  </a>
+</div>
+
+<script>
+  // Número do WhatsApp da Alcateia (55 + DDD + número, só dígitos).
+  const WA_NUMBER = '5517991154582';
+  document.querySelectorAll('a[data-wa]').forEach(a => {
+    a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(a.dataset.wa);
+  });
+</script>
+</body>
+</html>
